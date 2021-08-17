@@ -1,0 +1,133 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	position: relative;
+
+	.widget-title {
+		color: $light;
+		font-size: $font-size-base;
+		font-family: $body-font;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-bottom: $spacer * 0.5;
+	}	
+
+	// Widget - Social
+	&.widget-social {
+		.social-icons {
+			li {
+				padding: 0 $spacer * 0.25;
+
+				&:last-child {
+					padding-right: 0;
+				}
+		
+				a {
+					background-color: #554851;					
+					color: $white;
+					display: inline-block;
+					line-height: 1.8125rem;
+					width: 1.8125rem;
+					height: 1.8125rem;		
+					vertical-align: middle;
+					text-align: center;
+
+					@include border-radius(50%);
+					@include transition(all 0.3s ease-in-out);
+		
+					&:hover {
+						background-color: $theme-color;
+						color: $white;
+					}
+		
+					i {
+						vertical-align: top;
+						line-height: 1.8125rem;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			li {
+				a {
+					color: $white;
+					font-size: $font-size-base;
+					font-weight: 600;
+					text-transform: uppercase;
+
+					&:hover {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			display: flex;
+
+			.payment-icon {
+				background-color: #d6d3cc;
+				background-size: 80% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 0.25rem;
+				width: 3.5rem;
+				height: 2rem;				
+
+				@include border-radius(0.25rem);
+
+				&.visa {
+					background-image: url(../images/payments/visa.svg);
+				}
+
+				&.paypal {
+					background-image: url(../images/payments/paypal.svg);
+				}
+
+				&.express {
+					background-image: url(../images/payments/express.svg);
+				}
+
+				&.mastercard {
+					background-image: url(../images/payments/mastercard.svg);
+				}
+			}
+		}
+	}
+
+	// Widget - Subscribe
+	&.widget-subscribe {
+		.widget-content {
+			#widget-subscribe-form {
+				.input-group-append {
+					margin-left: -$spacer * 1.25;
+				}
+			}
+		}
+	}
+}

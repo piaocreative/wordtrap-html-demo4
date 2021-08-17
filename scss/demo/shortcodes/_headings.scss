@@ -1,0 +1,46 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: headings.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Heading Styles
+-----------------------------------------------------------------*/
+
+
+/* Heading Block - with Subtitle
+-----------------------------------------------------------------*/
+
+.heading-block { 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 7.25rem;
+	margin-bottom: $spacer * 1.875; 
+	position: relative;
+	width: 100%;
+
+	&:not(.no-effect) {
+		justify-content: flex-start;
+		padding-left: $spacer * 4.375;
+
+		&::before {
+			content: url(../images/heading_effect.png);
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	.title {		
+		display: block;
+		font-family: $heading-font;
+		font-size: $h2-font-size;
+		font-weight: 900;
+		line-height: 4.0625rem;
+		margin-bottom: 0;
+		margin-top: -$spacer * 1.25;
+	}
+}
