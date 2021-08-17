@@ -75,5 +75,17 @@ $( document ).ready( function() {
 
     }
 
+    if ( $( '#about-sliders' ).length ) {
+        $( '#about-sliders' ).slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,            
+        });
+    }
+
 
 } );
