@@ -1,7 +1,6 @@
 <!doctype html>
 <html dir="ltr" lang="en-US">
 <head>
-
     <!-- Meat Tags
 	============================================= -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -23,9 +22,9 @@
 
     <!-- Document Title
 	============================================= -->
-    <title>Demo4 | Saler</title>
+    <title>Demo4 | Wordtrap</title>
 </head>
-<body id="demo4">
+<body id="contact-page">
 
     <!-- Document Wrapper
 	============================================= -->
@@ -42,7 +41,7 @@
                     <!-- Logo
                     ============================================= -->
                     <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
-                        <img src="images/logo.png" alt="Saler Logo">
+                        <img src="images/logo.png" alt="Wordtrap Logo">
                     </a>
                     
                     <!-- Navbar Toggler
@@ -79,23 +78,62 @@
                         <!-- Primary Navigation
                         ============================================= -->
                         <ul id="primary-menu" class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">eCommerce</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="shop.html" class="nav-link">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="product.html" class="nav-link">Single Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="cart.html" class="nav-link">Cart</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="checkout.html" class="nav-link">Checkout</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="wishlist.html" class="nav-link">My Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="faqs.html" class="nav-link">FAQs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="team.html" class="nav-link">Meet the team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="member.html" class="nav-link">Team Member</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="404.html" class="nav-link">404</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="current nav-item">
-                                <a href="#" class="nav-link">Home</a>
-                            </li>                                  
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Shop</a>
+                                <a href="contact.html" class="nav-link">Contact Us</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Accessories</a>
-                            </li>                                    
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Blog</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">Archive</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="single-post.html" class="nav-link">Single Post</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul><!-- #primary-menu -->
     
@@ -137,9 +175,9 @@
 
         <!-- Content
 		============================================= -->
-		<section id="content">
+		<main id="content">
 
-            <div class="content-wrap">    
+            <div class="page-content">    
                 
                 <!-- Map
                 ============================================= -->
@@ -181,42 +219,33 @@
     
                                 <div class="col-lg-4">
                                     
-                                    <form class="contact-form" action="php/contact-form.php" method="POST" novalidate="novalidate">
-                                        <!-- <div class="contact-form-success alert alert-success d-none mt-4">
-                                            <strong>Success!</strong> Your message has been sent to us.
-                                        </div>
-        
-                                        <div class="contact-form-error alert alert-danger d-none mt-4">
-                                            <strong>Error!</strong> There was an error sending your message.
-                                            <span class="mail-error-message text-1 d-block"></span>
-                                        </div> -->
-        
+                                    <form class="contact-form" action="php/contact-form.php" method="POST" novalidate="novalidate">                                               
                                         <div class="mb-3">
                                             <label class="form-label" for="contactFormName">Your Name</label>
                                             <div class="required-field">
-                                                <input type="text" value="" class="form-control form-control-sm" name="name" id="contactFormName" required>
+                                                <input type="text" value="" class="form-control" name="name" id="contactFormName" required>
                                             </div>                                        
                                         </div>									
                                         <div class="mb-3">
                                             <label class="form-label" for="contactFormEmail">Your Email Address</label>
                                             <div class="required-field">
-                                                <input type="email" value="" class="form-control form-control-sm" name="email" id="contactFormEmail" required>
+                                                <input type="email" value="" class="form-control" name="email" id="contactFormEmail" required>
                                             </div>                                            
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label" for="contactFormSubject">Subject</label>
                                             <div class="">
-                                                <input type="text" value="" class="form-control form-control-sm" name="subject" id="contactFormSubject">
+                                                <input type="text" value="" class="form-control" name="subject" id="contactFormSubject">
                                             </div>                                        
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label" for="contactFormMsg">Message</label>
                                             <div class="">
-                                                <textarea maxlength="5000" rows="8" class="form-control form-control-sm" name="message" id="contactFormMsg"></textarea>
+                                                <textarea maxlength="5000" rows="8" class="form-control" name="message" id="contactFormMsg"></textarea>
                                             </div>                                            
                                         </div>
                                         <div class="mb-3">
-                                            <input type="submit" value="Send" class="btn btn-primary btn-sm text-uppercase" data-loading-text="Loading...">
+                                            <input type="submit" value="Send" class="btn btn-primary text-uppercase" data-loading-text="Loading...">
                                         </div>
                                     </form>
         
@@ -252,7 +281,7 @@
                                         </div>
                                         <div class="icon-header">
                                             <h4 class="body-font">Email:</h4>
-                                            <span class="text-secondary">mail@example.com</span>
+                                            <span class="text-secondary">info@wordtrap.com</span>
                                         </div>
                                     </div>
         
@@ -302,7 +331,7 @@
 
             </div>
 
-        </section><!-- #content -->
+        </main><!-- #content -->
 
         <!-- Footer
 		============================================= -->

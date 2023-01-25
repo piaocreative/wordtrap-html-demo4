@@ -93,7 +93,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: $heading-color;
+	color: $headings-color;
 	font-family: $heading-font;
 	font-weight: 700;
 	line-height: 1;
@@ -113,6 +113,7 @@ pre,
 dl,
 dd,
 blockquote,
+q,
 address,
 table,
 fieldset,
@@ -138,4 +139,29 @@ hr {
 	opacity: 1;
 	
 	@include border-radius(2px);
+}
+
+/* Blockquote */
+blockquote,
+q {
+	color: $theme-color;
+	display: block;
+	font-size: 1.875rem;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 3.75rem;
+
+	&::before {
+		color: $theme-color;
+		font-size: 3rem;
+		font-style: italic;
+		font-weight: 300;
+		line-height: 1;
+		display: block;
+		text-align: center;
+	}
+
+	&::after {
+		content: "";
+	}
 }

@@ -43,47 +43,17 @@
 	}
 }
 
-.nav {
-	flex-wrap: nowrap;
-}
-
-.navbar-light,
-.navbar-dark {
-	.navbar-toggler {
-		border-radius: 0;
-		border-color: transparent;
-
-		&:focus {
-			box-shadow: none;			
-		}
-	}	
-}
-
-.navbar {
-	padding: $spacer 0;
-
-	@include media-breakpoint-up(xl) {
-		padding: 0;
-	}
-}
-
-
-/* ----------------------------------------------------------------
-	Sticky Header
------------------------------------------------------------------*/
-
 /* ----------------------------------------------------------------
 	Logo
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-	margin-right: 3.375rem;
+	margin-right: 3.125rem;
 
 	img {
-		max-width: 6.5rem;
+		max-width: 9.375rem;
 	}
 }
-
 
 
 /* ----------------------------------------------------------------
@@ -92,42 +62,66 @@
 
 #primary-menu {
 	.nav-link {
-		color: $primary-menu-font-color;
-		display: block;
-		font-family: $primary-menu-font;
-		font-weight: $primary-menu-font-weight;
-		font-size: $primary-menu-font-size;		
-		letter-spacing: $primary-menu-font-spacing;
-		text-transform: $primary-menu-font-tt;		
-		
-		@include transition(all 0.3s ease-in-out);
-		
-		@include media-breakpoint-up(xl) {			
+		@include media-breakpoint-up(xxl) {
 			line-height: 1;
-			padding: $primary-menu-padding 1.25rem;
-		}
-
-		&:hover {
-			color: $theme-color;
 		}
 	}
 
 	.nav-item {
-		&.current,
-		&:hover {
-			a {
-				color: $theme-color;
+		&.current {
+			& > a {
+				color: $navbar-light-active-color;
+			}
+		}
+
+		.dropdown-menu {
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+			background-color: transparent;
+	
+			@include media-breakpoint-up(xxl) {
+				background-color: $white;
+				display: block;
+				min-width: 14rem;
+				top: -1000px;
+				opacity: 0;
+	
+				@include box-shadow(0 8px 51px 21px rgba(169, 169, 169, 0.11));
+				@include transition(transform .2s ease-out);
+				@include translate3d(0, -20px, 0);
+				@include border-radius(1rem);
+			}
+			
+			.nav-item {
+				a {
+					border: none;
+					padding: 0.75rem 1.125rem;
+				}
+				
+				&.current,
+				&:hover {
+					background-color: $navbar-light-active-color;
+
+					> a {
+						color: $white;
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-up(xxl) {
+			&.dropdown:hover {
+				.dropdown-menu {
+					top: auto;				
+					opacity: 1;
+	
+					@include translate3d(0, 0, 0);
+				}
 			}
 		}
 	}
 }
-
-
-/* ----------------------------------------------------------------
-	Mega Menu
------------------------------------------------------------------*/
-
-// Please ignore mega menu now 
 
 
 /* ----------------------------------------------------------------
@@ -136,7 +130,7 @@
 
 #top-links {
 	.nav-item {			
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxl) {
 			padding-right: 1.875rem;	
 		}
 	}
@@ -146,7 +140,7 @@
 		font-size: 0.75rem;
 		display: block;	
 		
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxl) {
 			padding: 0;		
 		}
 
@@ -171,15 +165,14 @@
 		border-top: 3px solid $link-hover-color;
 
 		@include border-radius(0);
-
 		@include box-shadow(0 0 5px -1px rgba($black, 0.2));
 
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxl) {
 			width: 8.75rem;
 		}
 
 		a.dropdown-item {
-			color: $heading-color;
+			color: $headings-color;
 			height: 2.25rem;
 			line-height: 2.25rem;
 			font-size: 0.75rem;				
@@ -213,7 +206,7 @@
 
 	.phone-number {
 		a {
-			color: $heading-color;
+			color: $headings-color;
 			font-size: 1rem;
 			font-weight: 600;
 
@@ -226,21 +219,11 @@
 
 
 /* ----------------------------------------------------------------
-	Top Social
------------------------------------------------------------------*/
-
-
-/* ----------------------------------------------------------------
-	Top Login
------------------------------------------------------------------*/
-
-
-/* ----------------------------------------------------------------
 	Top Buttons
 -----------------------------------------------------------------*/
 
 #top-btns {
-	@include media-breakpoint-down(lg) {
+	@include media-breakpoint-down(xxl) {
 		padding: 1rem 0;
 	}
 	
@@ -255,28 +238,3 @@
 		}
 	}
 }
-
-
-/* ----------------------------------------------------------------
-	Top Search
------------------------------------------------------------------*/
-
-
-
-
-/* ----------------------------------------------------------------
-	Top Cart
------------------------------------------------------------------*/
-
-
-
-
-/* ----------------------------------------------------------------
-	Top Account
------------------------------------------------------------------*/
-
-
-
-
-
-

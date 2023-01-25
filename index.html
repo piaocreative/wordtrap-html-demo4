@@ -1,7 +1,6 @@
 <!doctype html>
 <html dir="ltr" lang="en-US">
 <head>
-
     <!-- Meat Tags
 	============================================= -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -28,7 +27,7 @@
 
     <!-- Document Title
 	============================================= -->
-    <title>Demo4 | Saler</title>
+    <title>Demo4 | Wordtrap</title>
 </head>
 <body id="demo4">
 
@@ -47,7 +46,7 @@
                     <!-- Logo
                     ============================================= -->
                     <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
-                        <img src="images/logo.png" alt="Saler Logo">
+                        <img src="images/logo.png" alt="Wordtrap Logo">
                     </a>
                     
                     <!-- Navbar Toggler
@@ -85,22 +84,61 @@
                         ============================================= -->
                         <ul id="primary-menu" class="navbar-nav mx-auto">
                             <li class="current nav-item">
-                                <a href="#" class="nav-link">Home</a>
-                            </li>                                  
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Shop</a>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">eCommerce</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="shop.html" class="nav-link">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="product.html" class="nav-link">Single Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="cart.html" class="nav-link">Cart</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="checkout.html" class="nav-link">Checkout</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="wishlist.html" class="nav-link">My Wishlist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="faqs.html" class="nav-link">FAQs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="team.html" class="nav-link">Meet the team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="member.html" class="nav-link">Team Member</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="404.html" class="nav-link">404</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Accessories</a>
-                            </li>                                    
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">About</a>
+                                <a href="contact.html" class="nav-link">Contact Us</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Blog</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">Archive</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="single-post.html" class="nav-link">Single Post</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul><!-- #primary-menu -->
     
@@ -142,25 +180,53 @@
 
         <!-- Content
 		============================================= -->
-		<section id="content">
+		<main id="content">
 
-            <div class="content-wrap">
+            <div class="page-content">
 
                 <!-- Banner
-                ============================================= -->
-                <section id="banner" class="home-banner">
+				============================================= -->
+				<section id="home-banner" class="banner">
 
-                    <div class="banner-wrap">
-
-                        <div class="container">
-
-                            <!-- Add here revolution slider -->
-
-                        </div>
-
+					<div id="banner-slider">
+						<div class="banner-slide">
+							<img src="images/banner/home-banner1.jpg" class="img-fluid w-100" alt="Banner Image">
+						</div>
+						<div class="banner-slide"">
+							<img src="images/banner/home-banner2.jpg" class="img-fluid w-100" alt="Banner Image">
+						</div>
+						<div class="banner-slide">
+							<img src="images/banner/home-banner3.jpg" class="img-fluid w-100" alt="Banner Image">
+						</div>
+					</div>
+					<div class="banner-content">
+						<div class="container">
+							<div class="row">
+								<div class="offset-2 col-10 offset-xxl-0 col-lg-4">
+									<h2 class="fst-italic text-lg-end text-white">Premium</h2>
+									<h1 class="text-white">Wedding<br>dresses</h1>
+									<a href="#" class="btn btn-primary text-uppercase">Show Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div class="banner-socials">
+                        <span>We are in social networks</span>
+                        <hr>
+                        <ul class="socials">
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                        </ul>
                     </div>
 
-                </section><!-- #banner -->
+				</section><!-- #banner -->
                 
                 <!-- Product Categories
                 ============================================= -->
@@ -264,7 +330,7 @@
                                                     <i class="fas fa-star"></i>
                                                 </div>
                                             </div>
-                                            <div class="product-price">$149</div>
+                                            <div class="product-price">$1499</div>
                                         </div>
                                         <div class="product-btns">
                                             <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
@@ -289,7 +355,7 @@
                                                     <i class="fas fa-star"></i>
                                                 </div>
                                             </div>
-                                            <div class="product-price">$149</div>
+                                            <div class="product-price">$1499</div>
                                         </div>
                                         <div class="product-btns">
                                             <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
@@ -318,7 +384,7 @@
                                                     <i class="fas fa-star"></i>
                                                 </div>
                                             </div>
-                                            <div class="product-price">$149</div>
+                                            <div class="product-price">$1499</div>
                                         </div>
                                         <div class="product-btns">
                                             <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
@@ -361,7 +427,7 @@
                                                     <i class="fas fa-star"></i>
                                                 </div>
                                             </div>
-                                            <div class="product-price">$149</div>
+                                            <div class="product-price">$1499</div>
                                         </div>
                                         <div class="product-btns">
                                             <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
@@ -390,7 +456,7 @@
                                                     <i class="fas fa-star"></i>
                                                 </div>
                                             </div>
-                                            <div class="product-price">$149</div>
+                                            <div class="product-price">$1499</div>
                                         </div>
                                         <div class="product-btns">
                                             <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
@@ -415,7 +481,7 @@
                                                     <i class="fas fa-star"></i>
                                                 </div>
                                             </div>
-                                            <div class="product-price">$149</div>
+                                            <div class="product-price">$1499</div>
                                         </div>
                                         <div class="product-btns">
                                             <a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
@@ -472,7 +538,7 @@
                                             </div>
                                             <div class="product-details">
                                                 <a href="#"><h3 class="product-title">Dress</h3></a>
-                                                <div class="product-price">$149</div>
+                                                <div class="product-price">$1499</div>
                                             </div>                                            
                                         </div>
 
@@ -491,7 +557,7 @@
                                             </div>
                                             <div class="product-details">
                                                 <a href="#"><h3 class="product-title">Dress</h3></a>
-                                                <div class="product-price">$149</div>
+                                                <div class="product-price">$1499</div>
                                             </div>                                            
                                         </div>
 
@@ -510,7 +576,7 @@
                                             </div>
                                             <div class="product-details">
                                                 <a href="#"><h3 class="product-title">Dress</h3></a>
-                                                <div class="product-price">$149</div>
+                                                <div class="product-price">$1499</div>
                                             </div>
                                         </div>
 
@@ -539,7 +605,7 @@
                                             </div>
                                             <div class="product-details">
                                                 <a href="#"><h3 class="product-title">Dress</h3></a>
-                                                <div class="product-price">$149</div>
+                                                <div class="product-price">$1499</div>
                                             </div>
                                         </div>
 
@@ -558,7 +624,7 @@
                                             </div>
                                             <div class="product-details">
                                                 <a href="#"><h3 class="product-title">Dress</h3></a>
-                                                <div class="product-price">$149</div>
+                                                <div class="product-price">$1499</div>
                                             </div>
                                         </div>
 
@@ -577,7 +643,7 @@
                                             </div>
                                             <div class="product-details">
                                                 <a href="#"><h3 class="product-title">Dress</h3></a>
-                                                <div class="product-price">$149</div>
+                                                <div class="product-price">$1499</div>
                                             </div>                                            
                                         </div>
 
@@ -738,7 +804,7 @@
 
             </div>
 
-        </section><!-- #content -->
+        </main><!-- #content -->
 
         <!-- Footer
 		============================================= -->
@@ -855,11 +921,6 @@
         </footer><!-- #footer -->
 
     </div>
-
-    <!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
-
 
     <!-- External JavaScripts
 	============================================= -->

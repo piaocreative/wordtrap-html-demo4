@@ -130,4 +130,11 @@
 			}
 		}
 	}
+
+	// Wdiget - Search
+	&.widget-search {
+		button[type=submit] {
+			border: 1px solid $input-border-color;
+		}
+	}
 }

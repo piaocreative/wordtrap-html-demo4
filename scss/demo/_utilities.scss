@@ -3,7 +3,9 @@
 -----------------------------------------------------------------------------------*/
 
 
-//-------------------- Fonts --------------------//
+/* ----------------------------------------------------------------
+	Custom Fonts
+-----------------------------------------------------------------*/
 
 // Font Family
 .body-font { font-family: $body-font !important; }
@@ -17,7 +19,9 @@
 .text-black { color: #000 !important; }
 
 
-//-------------------- Image --------------------//
+/* ----------------------------------------------------------------
+	Image
+-----------------------------------------------------------------*/
 
 img {
 	&.img-full {
@@ -29,16 +33,9 @@ img {
 }
 
 
-//-------------------- Background --------------------//
-
-.bg-cover {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
-
-//-------------------- Section ------------------//
+/* ----------------------------------------------------------------
+	Section
+-----------------------------------------------------------------*/
 
 .section {
 	position: relative;
@@ -60,4 +57,181 @@ img {
 
 .section-margin-bottom {
 	margin-bottom: $section-spacer;
+}
+
+
+/* ----------------------------------------------------------------
+	Custom Background
+-----------------------------------------------------------------*/
+
+.bg-cover {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-effect {
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+
+	&::before,
+	&::after {
+		content: "";
+		background-repeat: no-repeat;
+		background-size: 100%;
+		position: absolute;		
+		width: 100%;
+		height: 100%;
+		max-width: 16.5rem;
+	}
+
+	&::before {
+		background-position: top;
+		top: -$spacer * 5;
+	}
+
+	&::after {
+		background-position: bottom;
+		bottom: 0;
+	}
+
+	&.bg-effect-before1::before {
+		background-image: url(../images/bg_effect_before1.png);		
+		left: 0;
+	}
+
+	&.bg-effect-after1::after {
+		background-image: url(../images/bg_effect_after1.png);		
+		right: 0;
+	}
+
+	&.bg-effect-before2::before {		
+		background-image: url(../images/bg_effect_before2.png);
+		right: 0;
+	}
+
+	&.bg-effect-after2::after {		
+		background-image: url(../images/bg_effect_after2.png);
+		left: 0;
+	}	
+}
+
+
+/* ----------------------------------------------------------------
+	Bootstarp Slider
+-----------------------------------------------------------------*/
+
+.slider.slider-horizontal {
+    width: 100%;
+
+    .slider-track {
+        height: 5px;
+    }
+}
+
+.slider-track {
+    background-color: $light;
+    background-image: none;
+
+    @include box-shadow(none);
+}
+
+.slider-selection,
+.slider-handle {
+    background-color: $theme-color;
+    background-image: none;
+
+    @include box-shadow(none);
+}
+
+.slider-handle {
+    width: 14px;
+    height: 14px;
+}
+
+
+/* ----------------------------------------------------------------
+	Tabs
+-----------------------------------------------------------------*/
+
+.nav-tabs {
+	border-bottom: 0;
+	margin-bottom: 1rem;
+
+	.nav-link {
+		font-size: 1.125rem;
+		font-weight: 600;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Accordion
+-----------------------------------------------------------------*/
+
+.accordion-header {
+	margin-bottom: 0;
+}
+
+.accordion-button {
+	font-family: $body-font;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.accordion-body {
+	padding-top: 0;
+}
+
+.accordion-item {
+	margin-bottom: 0.5rem;
+	overflow: hidden;
+}
+
+
+/* ----------------------------------------------------------------
+	Pagination
+-----------------------------------------------------------------*/
+
+.pagination {
+	.page-item {
+		margin-left: 0.5rem;		
+
+		&.prev {
+			.page-link {
+				&::before {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8999 1L0.899902 10L9.8999 19' stroke='%23302f2d' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					margin-right: 0.625rem;
+				}
+
+				&:hover::before {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8999 1L0.899902 10L9.8999 19' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				}
+			}			
+		}
+
+		&.next {
+			.page-link {
+				&::after {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.899902 1L9.8999 10L0.899902 19' stroke='%23302f2d' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					margin-left: 0.625rem;
+				}
+
+				&:hover::after {
+					content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 11 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.899902 1L9.8999 10L0.899902 19' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+				}
+			}
+		}
+
+		.page-link {
+			line-height: 1;
+			position: relative;
+
+			@include border-radius($pagination-border-radius);
+		}
+	}
 }
