@@ -11,7 +11,7 @@
 
 .post {
 	position: relative;
-	margin-bottom: $spacer * 1.875;	
+	margin-bottom: $spacer * 1.875;
 
 	&:hover {
 		.post-thumbnail {
@@ -40,7 +40,7 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
-		
+
 		@include transition(all 0.5s ease-in-out);
 	}
 }
@@ -54,12 +54,12 @@
 	h5 {
 		font-family: $body-font;
 		font-weight: 400;
-		line-height: 1;		
+		line-height: 1;
 		margin-bottom: $spacer * 0.75;
 
 		a {
 			color: $headings-color;
-			
+
 			&:hover { color: $theme-color; }
 		}
 	}
@@ -74,8 +74,8 @@
 	}
 }
 
-.entry-content { 
-	position: relative; 
+.entry-content {
+	position: relative;
 	margin-bottom: $spacer * 3.125;
 }
 
@@ -97,7 +97,7 @@
 #single-post {
 	.post {
 		margin-bottom: $spacer;
-		
+
 		.post-content {
 			padding: 2.5rem 0;
 			display: block;

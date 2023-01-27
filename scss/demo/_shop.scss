@@ -20,7 +20,7 @@
 -----------------------------------------------------------------*/
 .category {
 	flex: 1;
-	position: relative;		
+	position: relative;
 	overflow: hidden;
 
 	&:hover {
@@ -36,21 +36,21 @@
 	.category-desc {
 		position: absolute;
 		left: 2.25rem;
-		bottom: 2.875rem;		
+		bottom: 2.875rem;
 		z-index: 1;
 	}
 
-	.category-title {	
+	.category-title {
 		color: $white;
 		font-family: $body-font;
 		font-size: 1rem;
 		font-weight: 600;
-		line-height: 1;	
+		line-height: 1;
 		writing-mode: vertical-rl;
 		text-orientation: mixed;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		
+
 		@include rotate(180deg);
 	}
 
@@ -88,7 +88,7 @@
 
 	.product-image {
 		text-align: center;
-		position: relative;		
+		position: relative;
 
 		@include border-radius($border-radius);
 
@@ -104,7 +104,7 @@
 	}
 
 	.product-details {
-		padding: $spacer * 0.75 0 0 0;		
+		padding: $spacer * 0.75 0 0 0;
 	}
 
 	.product-price {
@@ -147,7 +147,7 @@
 		bottom: 0;
 		padding: $spacer * 1.25 0;
 		opacity: 0;
-		text-align: center;		
+		text-align: center;
 		width: 100%;
 		z-index: 2;
 
@@ -161,10 +161,10 @@
 		height: 2.8125rem;
 		background-color: $white;
 		color: $theme-color;
-		text-align: center;		
+		text-align: center;
 
 		@include border-radius(50%);
-		@include transition(all 0.3s ease-in-out);		
+		@include transition(all 0.3s ease-in-out);
 
 		&:hover {
 			background-color: $theme-color;
@@ -182,7 +182,7 @@
 		display: inline-block;
 		position: absolute;
 		right: 0.75rem;
-		top: 0.75rem;	
+		top: 0.75rem;
 		z-index: 2;
 
 		&:hover {
@@ -200,7 +200,7 @@
 			overflow: hidden;
 
 			img {
-				@include transition(all 0.5s ease-in-out);				
+				@include transition(all 0.5s ease-in-out);
 			}
 		}
 
@@ -308,7 +308,7 @@
 			}
 		}
 	}
-	
+
 	.product-filter-size {
 		ul li {
 			display: inline-block;
@@ -341,7 +341,7 @@
 					&::after {
 						display: none;
 					}
-				}				
+				}
 			}
 		}
 	}
@@ -356,7 +356,7 @@
 	#comments {
 		.reviews-title {
 			font-size: 1.125rem;
-			
+
 			span {
 				color: $body-color;
 				font-family: $body-font;
@@ -435,7 +435,7 @@
 -----------------------------------------------------------------*/
 
 .shop-table {
-	td, th {			
+	td, th {
 		padding: 1rem;
 	}
 

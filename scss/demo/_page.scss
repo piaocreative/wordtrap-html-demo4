@@ -27,18 +27,18 @@
 
 #page-title {
 	position: relative;
-	
+
 	.title {
-		display: block;		
+		display: block;
 		font-family: $heading-font;
 		font-size: $h1-font-size;
-		font-weight: 900;		
+		font-weight: 900;
 		line-height: 1;
 	}
 
 	.sub-title {
 		display: block;
-		font-family: $heading-font;		
+		font-family: $heading-font;
 		font-size: 1.875rem;
 		font-weight: 700;
 		font-style: italic;
@@ -94,32 +94,32 @@
 	#about-sliders {
 		.slick-dots {
 			text-align: left;
-	
+
 			li {
 				width: 4.4375rem;
 				height: 0.3125rem;
 				margin: 0 0.375rem;
-	
+
 				&:first-child {
 					margin-left: 0;
 				}
-	
+
 				&:last-child {
 					margin-right: 0;
 				}
-	
+
 				button {
 					background-color: rgba($primary, 0.3);
 					border-radius: 0.1875rem;
 					width: 4.4375rem;
 					height: 0.3125rem;
 					padding: 0;
-	
+
 					&::before {
 						display: none;
 					}
 				}
-	
+
 				&.slick-active {
 					button {
 						background-color: $primary;
@@ -132,14 +132,14 @@
 	.history-image {
 		width: 100%;
 		margin-bottom: $spacer * 1.875;
-	
+
 		@include media-breakpoint-up(xl) {
 			margin-bottom: 0;
 		}
-	
+
 		@include media-breakpoint-up(xxl) {
 			width: 50vw;
-	
+
 			&.rtl {
 				margin-left: calc(-50vw + 40.625rem);
 			}
@@ -169,11 +169,11 @@
 
 	.member-role {
 		color: $primary;
-		font-size: 0.75rem;		
+		font-size: 0.75rem;
 	}
 
 	.member-intro {
-		margin-top: 1.5rem;		
+		margin-top: 1.5rem;
 
 		.read-more {
 			color: $primary;
@@ -225,7 +225,7 @@
 -----------------------------------------------------------------*/
 
 #single-member-page {
-	.team-member {		
+	.team-member {
 		padding: 0;
 
 		.member-details {
@@ -239,7 +239,7 @@
 			position: relative;
 
 			&::before {
-				content: "";				
+				content: "";
 				background-image: escape-svg($checker-icon);
 				background-repeat: no-repeat;
 				background-size: 100%;
@@ -291,7 +291,7 @@
 			.post-thumbnail {
 				@include border-radius(0.5rem);
 			}
-		
+
 			.post-content {
 				display: block;
 				padding: 0.9375rem 0;
@@ -313,7 +313,7 @@
 				}
 			}
 		}
-	}	
+	}
 }
 
 
@@ -350,10 +350,10 @@
 			top: 1.25rem;
 			z-index: 1;
 
-			li {				
+			li {
 				border-left: 5px solid transparent;
 				margin-bottom: 0.625rem;
-				padding-left: 0.75rem;				
+				padding-left: 0.75rem;
 
 				> a {
 					background-color: $white;
@@ -361,7 +361,7 @@
 					width: 5.625rem;
 					height: 5.625rem;
 					overflow: hidden;
-				}				
+				}
 
 				&:hover,
 				&.active {
@@ -406,8 +406,8 @@
 			margin-top: 1.5rem;
 			margin-bottom: 1.5rem;
 		}
-		
-		.product-meta {			
+
+		.product-meta {
 			span {
 				display: block;
 
@@ -452,24 +452,24 @@
 					border-bottom: none;
 				}
 			}
-	
+
 			.cart-item {
 				.product-thumbnail {
 					width: 8.25rem;
-	
+
 					img {
 						width: 6.25rem;
 						height: auto;
 						min-width: 6.25rem;
 					}
 				}
-	
+
 				.product-name {
 					color: $secondary;
 					font-size: 1rem;
 					font-weight: 600;
 				}
-	
+
 				.product-wishlist,
 				.product-delete {
 					color: $body-color;
@@ -480,7 +480,7 @@
 						color: $primary;
 					}
 				}
-	
+
 				.product-subtotal {
 					color: $secondary;
 					font-size: 1.25rem;
@@ -498,12 +498,12 @@
 				}
 			}
 		}
-	}	
+	}
 
 	.cart-totals {
 		@include media-breakpoint-up(lg) {
 			padding: 0 2.375rem;
-		}		
+		}
 
 		.shop-table {
 			font-size: 0.75rem;
@@ -515,7 +515,7 @@
 				padding: 1rem 0;
 				vertical-align: middle;
 			}
-			
+
 			th {
 				font-weight: 600;
 				text-transform: uppercase;
@@ -526,7 +526,7 @@
 			}
 
 			.order-total {
-				td {					
+				td {
 					font-size: 1.25rem;
 					font-weight: 600;
 				}
@@ -590,7 +590,7 @@
 					font-weight: 600;
 					text-transform: uppercase;
 				}
-			}	
+			}
 
 			tfoot {
 				.cart-subtotal,
@@ -612,23 +612,23 @@
 					}
 				}
 			}
-			
+
 			.shipping {
 				td {
 					text-align: left;
-	
+
 					p {
 						font-weight: 600;
 					}
 				}
-	
+
 				.shipping-destination {
 					input {
 						background-color: $light;
 					}
 				}
 			}
-		}	
+		}
 
 		.checkout-payment {
 			p {

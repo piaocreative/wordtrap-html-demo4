@@ -13,12 +13,12 @@
 /* Heading Block - with Subtitle
 -----------------------------------------------------------------*/
 
-.heading-block { 
+.heading-block {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 7.25rem;
-	margin-bottom: $spacer * 1.875; 
+	margin-bottom: $spacer * 1.875;
 	position: relative;
 	width: 100%;
 
@@ -34,7 +34,7 @@
 		}
 	}
 
-	.title {		
+	.title {
 		display: block;
 		font-family: $heading-font;
 		font-size: $h2-font-size;
